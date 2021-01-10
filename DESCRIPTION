@@ -1,8 +1,8 @@
 Package: rotasym
 Type: Package
 Title: Tests for Rotational Symmetry on the Hypersphere
-Version: 1.0.9
-Date: 2020-08-25
+Version: 1.1.0
+Date: 2021-01-10
 Authors@R: c(
      person(given = "Eduardo", family = "García-Portugués",
             role = c("aut", "cre"), email = "edgarcia@est-econ.uc3m.es",
@@ -24,13 +24,13 @@ LinkingTo: Rcpp, RcppArmadillo
 URL: https://github.com/egarpor/rotasym
 BugReports: https://github.com/egarpor/rotasym
 Encoding: UTF-8
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 NeedsCompilation: yes
-Packaged: 2020-08-24 23:53:03 UTC; Eduardo
+Packaged: 2021-01-10 17:28:19 UTC; Eduardo
 Author: Eduardo García-Portugués [aut, cre]
     (<https://orcid.org/0000-0002-9224-4111>),
   Davy Paindaveine [aut],
   Thomas Verdebout [aut]
 Maintainer: Eduardo García-Portugués <edgarcia@est-econ.uc3m.es>
 Repository: CRAN
-Date/Publication: 2020-08-27 05:10:10 UTC
+Date/Publication: 2021-01-10 18:50:02 UTC

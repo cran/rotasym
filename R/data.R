@@ -69,11 +69,11 @@
 #' Baranyi, T., Győri, L., Ludmány, A. (2016) On-line tools for solar data
 #' compiled at the Debrecen observatory and their extensions with the
 #' Greenwich sunspot data. \emph{Solar Physics}, 291(9--10):3081--3102.
-#' \url{http://dx.doi.org/10.1007/s11207-016-0930-1}
+#' \doi{10.1007/s11207-016-0930-1}
 #'
 #' Győri, L., Ludmány, A., Baranyi, T. (2019) Comparative analysis of Debrecen
 #' sunspot catalogues. \emph{Monthly Notices of the Royal Astronomical
-#' Society}, 465(2):1259--1273. \url{https://doi.org/10.1093/mnras/stw2667}
+#' Society}, 465(2):1259--1273. \doi{10.1093/mnras/stw2667}
 #' @examples
 #' # Load data
 #' data("sunspots_births")
@@ -87,14 +87,18 @@
 #' # Plot data associated to the 23rd cycle
 #' sunspots_23 <- subset(sunspots_births, cycle == 23)
 #' n <- nrow(sunspots_23$X)
-#' rgl::plot3d(0, 0, 0, xlim = c(-1, 1), ylim = c(-1, 1), zlim = c(-1, 1),
-#'             radius = 1, type = "s", col = "lightblue", alpha = 0.25,
-#'             lit = FALSE)
+#' if (requireNamespace("rgl")) {
+#'   rgl::plot3d(0, 0, 0, xlim = c(-1, 1), ylim = c(-1, 1), zlim = c(-1, 1),
+#'               radius = 1, type = "s", col = "lightblue", alpha = 0.25,
+#'               lit = FALSE)
+#' }
 #' n_cols <- 100
 #' cuts <- cut(x = sunspots_23$date, include.lowest = TRUE,
 #'             breaks = quantile(sunspots_23$date,
 #'                              probs = seq(0, 1, l = n_cols + 1)))
-#' rgl::points3d(sunspots_23$X, col = viridisLite::viridis(n_cols)[cuts])
+#' if (requireNamespace("rgl")) {
+#'   rgl::points3d(sunspots_23$X, col = viridisLite::viridis(n_cols)[cuts])
+#' }
 #' # Spörer's law: sunspots at the beginning of the solar cycle (dark blue
 #' # color) tend to appear at higher latitutes, gradually decreasing to the
 #' # equator as the solar cycle advances (yellow color)

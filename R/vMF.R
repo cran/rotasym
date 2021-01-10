@@ -53,7 +53,7 @@
 #' @references
 #' Wood, A. T. A. (1994) Simulation of the von Mises Fisher distribution.
 #' \emph{Commun. Stat. Simulat.}, 23(1):157--164.
-#' \url{https://doi.org/10.1080/03610919408813161}
+#' \doi{10.1080/03610919408813161}
 #' @examples
 #' # Simulation and density evaluation for p = 2
 #' mu <- c(0, 1)
@@ -68,8 +68,10 @@
 #' mu <- c(0, 0, 1)
 #' kappa <- 2
 #' x <- r_vMF(n = n, mu = mu, kappa = kappa)
-#' rgl::plot3d(x, col = col[rank(d_vMF(x = x, mu = mu, kappa = kappa))],
-#'             size = 5)
+#' if (requireNamespace("rgl")) {
+#'   rgl::plot3d(x, col = col[rank(d_vMF(x = x, mu = mu, kappa = kappa))],
+#'               size = 5)
+#' }
 #'
 #' # Cosines density
 #' g_tilde <- function(t, p, kappa) {

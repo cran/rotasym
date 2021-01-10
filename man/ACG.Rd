@@ -79,12 +79,14 @@ Lambda <- rbind(c(5, 1, 0.5),
                 c(1, 2, 1),
                 c(0.5, 1, 1))
 x <- r_ACG(n = n, Lambda = Lambda)
-rgl::plot3d(x, col = col[rank(d_ACG(x = x, Lambda = Lambda))], size = 5)
+if (requireNamespace("rgl")) {
+  rgl::plot3d(x, col = col[rank(d_ACG(x = x, Lambda = Lambda))], size = 5)
+}
 }
 \references{
 Tyler, D. E. (1987). Statistical analysis for the angular central Gaussian
 distribution on the sphere. \emph{Biometrika}, 74(3):579--589.
-\url{https://doi.org/10.1093/biomet/74.3.579}
+\doi{10.1093/biomet/74.3.579}
 }
 \seealso{
 \code{\link{tangent-elliptical}}.
