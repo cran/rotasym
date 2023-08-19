@@ -1,6 +1,6 @@
-5893fc8651ab6ba63e03a73d553ea556 *DESCRIPTION
+464a66491867aa46be9104c2f5dfdb3e *DESCRIPTION
 2b541cb91620ee03ff31707744b2dc46 *NAMESPACE
-587c94e939b59bab3cea502986773871 *NEWS.md
+2189097e737e89fa1ae793077efb61fc *NEWS.md
 c330fb398087597ceb8108bcd2041d3f *R/ACG.R
 79e4c1a0c0863562002d91d85fffa1ff *R/RcppExports.R
 a820570af979ffc1cc98a4d544c630ec *R/TE.R
@@ -14,9 +14,9 @@ f3f9d76526b1b37f223b78067a35dae8 *R/tang-norm.R
 4bdc7614b754606e97abfc96f6b0aaf5 *R/tests.R
 dd627b6b3a698a35e4074cf7dd33f48d *R/unif.R
 61b400997a9fdc42b3906667de468639 *R/vMF.R
-94337bb547d77e3e17f6270dcc9b89e0 *build/partial.rdb
+ea124a494ad7922985532ad3b308e4d5 *build/partial.rdb
 b66097d5c6aa86eaccd2b52a9b56ee17 *data/sunspots_births.rda
-2b50894cdb84ebc851c4f98b7451a3cc *inst/CITATION
+ffcc95c449662368fa02b0b4aeb44acb *inst/CITATION
 05e6296a39cac51f7143ddfb1a5ad768 *man/ACG.Rd
 48f55001152566a9e4058c5f94396710 *man/check_unit_norm.Rd
 7f202e39162d76b7211e424b403b95a8 *man/cosines-signs.Rd
@@ -29,7 +29,7 @@ c5d6ce5f2c3346b21efcdfd6ebf42810 *man/sunspots_births.Rd
 0b9d17aab7dbcfaa801dfc803fcddd73 *man/test_rotasym.Rd
 21343323131ee35b59da21da295d50fd *man/unif.Rd
 045c843bb34f8a1d7db6e396273dc799 *man/vMF.Rd
-e439acc75f6b31b8c52fa4db6dfc6342 *src/Makevars
-e439acc75f6b31b8c52fa4db6dfc6342 *src/Makevars.win
+e5baf04ba567fb5cd348510933cdff4f *src/Makevars
+e5baf04ba567fb5cd348510933cdff4f *src/Makevars.win
 68ae3e9a19db280af074d9703bdead88 *src/RcppExports.cpp
-dbd65e7e582023e62b91692e3a9e94e0 *src/vMF.cpp
+9fb85bd3018c23febda4e41ca21ca509 *src/vMF.cpp
